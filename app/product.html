@@ -1,0 +1,213 @@
+---
+title: 系列鏡框
+layout: ./app/layout.ejs
+engine: ejs
+current: product
+---
+
+<section class="product-menu">
+  <div class="container">
+    <ul class="nav justify-content-center flex-nowrap">
+      <li class="nav-item">
+        <a href="#" class="opticalBtn nav-link d-flex justify-content-center align-items-center active">
+          <div class="icon bg-icon-diamond-black d-none d-sm-block"></div>
+          <p>OPTICAL</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="sunglassesBtn nav-link d-flex justify-content-center align-items-center">
+          <div class="icon bg-icon-sun-black d-none d-sm-block"></div>
+          <p>SUNGLASSES</p>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="functionalBtn nav-link d-flex justify-content-center align-items-center">
+          <div class="icon bg-icon-thunder-black d-none d-sm-block"></div>
+          <p>FUNCTIONAL</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="optical">
+  <div class="container-fluid d-flex">
+    <div class="col-6 bg-banner-1 heroimg"></div>
+    <div class="col-6 bg-banner-2 heroimg"></div>
+  </div>
+  <div class="container product-card">
+    <h2 class="product-card-title"><span>Celluloid Combi</span><br>賽璐珞鈦金屬混合鏡框</h2>
+    <div class="row optical-product-card-group">
+      <!--DOM-->
+    </div>
+  </div>
+</section>
+<section class="sunglasses" style="display:none">
+  <div class="container-fluid d-flex">
+    <div class="col-6 bg-banner-3 heroimg"></div>
+    <div class="col-6 bg-banner-4 heroimg"></div>
+  </div>
+  <div class="container product-card">
+    <h2 class="product-card-title"><span>2020 NEW COLLECTION</span><br>賽璐珞鈦金屬混合鏡框</h2>
+    <div class="row sunglasses-product-card-group">
+      <!--DOM-->
+    </div>
+  </div>
+</section>
+
+<section class="product-pagination">
+  <nav class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link">上一頁</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">下一頁</a>
+      </li>
+    </ul>
+  </nav>
+</section>
+<script>
+  let optical = document.querySelector('.optical');
+  let opticalBtn = document.querySelector('.opticalBtn');
+  let sunglasses = document.querySelector('.sunglasses')
+  let sunglassesBtn = document.querySelector('.sunglassesBtn');
+  //選單按鈕
+  opticalBtn.addEventListener('click', sunglassesHide);
+  function sunglassesHide() {
+    sunglasses.style.display = "none";
+    optical.style.display = "block";
+    opticalBtn.classList.add('active');
+    sunglassesBtn.classList.remove('active');
+  }
+  sunglassesBtn.addEventListener('click', opticalHide);
+  function opticalHide() {
+    sunglasses.style.display = "block";
+    optical.style.display = "none";
+    opticalBtn.classList.remove('active');
+    sunglassesBtn.classList.add('active')
+  }
+  //opticalCard內容
+  let opticalCard = [
+    {
+      title: "product1",
+      img: "./assets/images/products-1.png"
+    },
+    {
+      title: "product2",
+      img: "./assets/images/products-2.jpg"
+    },
+    {
+      title: "product3",
+      img: "./assets/images/products-3.jpg"
+    },
+    {
+      title: "product4",
+      img: "./assets/images/products-4.jpg"
+    },
+    {
+      title: "product5",
+      img: "./assets/images/products-5.jpg"
+    },
+    {
+      title: "product6",
+      img: "./assets/images/products-1.png"
+    },
+    {
+      title: "product7",
+      img: "./assets/images/products-2.jpg"
+    },
+    {
+      title: "product8",
+      img: "./assets/images/products-3.jpg"
+    },
+    {
+      title: "product9",
+      img: "./assets/images/products-4.jpg"
+    },
+  ]
+  let opticalCardContent = '';
+  for (let i = 0; i < opticalCard.length; i++) {
+    console.log(opticalCard[i].img);
+    opticalCardContent += `<div class="col-12 col-md-6 col-xl-3">
+        <div class="card rounded-0 border-0">
+          <img src="${opticalCard[i].img}" class="product-card-img">
+          <div class="card-body p-0 d-flex flex-wrap">
+            <h5 class="card-title w-50">BJ41600S</h5>
+            <p class="card-text w-50">NTD3,490</p>
+            <div class="product-color d-flex">
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>`
+  }
+  document.querySelector('.optical-product-card-group').innerHTML = opticalCardContent;
+
+  //sunglassesCard內容
+  let sunglassesCard = [
+    {
+      title: "product1",
+      img: "./assets/images/products-6.png"
+    },
+    {
+      title: "product2",
+      img: "./assets/images/products-7.png"
+    },
+    {
+      title: "product3",
+      img: "./assets/images/products-8.jpg"
+    },
+    {
+      title: "product4",
+      img: "./assets/images/products-9.jpg"
+    },
+    {
+      title: "product5",
+      img: "./assets/images/products-10.jpg"
+    },
+    {
+      title: "product6",
+      img: "./assets/images/products-11.png"
+    },
+    {
+      title: "product7",
+      img: "./assets/images/products-6.png"
+    },
+    {
+      title: "product8",
+      img: "./assets/images/products-7.png"
+    },
+    {
+      title: "product9",
+      img: "./assets/images/products-8.jpg"
+    },
+  ]
+  let sunglassesCardContent = '';
+  for (let i = 0; i < sunglassesCard.length; i++) {
+    console.log(sunglassesCard[i].img);
+    sunglassesCardContent += `<div class="col-12 col-md-6 col-xl-3">
+        <div class="card rounded-0 border-0">
+          <img src="${sunglassesCard[i].img}" class="product-card-img">
+          <div class="card-body p-0 d-flex flex-wrap">
+            <h5 class="card-title w-50">BJ41600S</h5>
+            <p class="card-text w-50">NTD3,490</p>
+            <div class="product-color d-flex">
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+      </div>`
+  }
+  document.querySelector('.sunglasses-product-card-group').innerHTML = sunglassesCardContent;
+</script>
