@@ -19,5 +19,37 @@
         }
       }
     }
-}
+  }
+  .footer{
+    .container{
+      padding-top: 12px;
+      padding-bottom: 39px;
+    }
+    .contact{
+      margin-bottom: 1.25rem;
+    }
+    .nav{
+      margin-bottom: 0.625rem;
+      a{
+        line-height: 1.5rem;
+        color:map-get($color,white);
+      }
+    }
+    .info{
+      .bg-icon-phone, .bg-icon-mail{
+        width: 18px;
+        height: 18px;
+        margin-right: 1.375rem;
+      }
+      p{
+        font-size: 1.25rem;
+      }
+    }
+    .copyright{
+      padding-top: 2rem;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
 }
