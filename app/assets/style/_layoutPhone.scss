@@ -1,0 +1,36 @@
+$bg_map:(
+  png:logo,
+);
+@include bgImg;
+
+.container-fluid{
+  padding: 0;
+}
+.header{
+  background-color: map-get($color,red);
+  .logo{
+    h1{
+      margin: 0.625rem 0 0.625rem 0;
+    }
+    .bg-logo{
+      margin: 0 auto;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      background-size: contain;
+    }
+  }
+  .menu{
+    .nav{
+      &-item{
+        border:1px solid map-get($color,white);
+        a{
+          font-size: 1.25rem;
+          line-height: 1.8125rem;
+          text-align: center;
+          color: map-get($color,white);
+        }
+      }
+    }
+  }
+}

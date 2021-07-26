@@ -1,0 +1,23 @@
+@include pad{
+  .header{
+    .logo{
+      h1{
+        margin:1.875rem 0 1.875rem 5.5rem;
+      }
+    }
+    .menu{
+      .nav{
+        &-item{
+          border: 0;
+          &:last-child{
+            margin-right: 2.4375rem;
+          }
+          a{
+            line-height: 1.875rem;
+            text-align: right;
+          }
+        }
+      }
+    }
+}
+}
