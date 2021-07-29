@@ -1,0 +1,157 @@
+---
+title: 布落格
+layout: ./app/layout.ejs
+engine: ejs
+current: blog
+---
+
+<section class="blog-menu d-none d-md-block align-items-center">
+  <div class="container-fluid">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">最近消息</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">特別企劃</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">新品上市</a>
+      </li>
+      <li class="nav-item me-auto">
+        <a class="nav-link" href="#">鏡框小知識</a>
+      </li>
+      <li class="nav-item blog-menu-icon d-flex">
+        <div class="bg-icon-search align-self-center"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="blog-detail">
+  <div class="container">
+    <div class="row">
+      <!--內文-->
+      <div class="col-12 col-md-6">
+        <!--麵包屑-->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="blog.html">部落格</a></li>
+            <li class="breadcrumb-item active">情人節特別企劃</li>
+          </ol>
+        </nav>
+        <!--hashtag-->
+        <div class="blog-detail-hashtag d-flex align-items-center">
+          <p>#special</p>
+          <p>#event</p>
+        </div>
+        <!--文字區域-->
+        <div class="blog-detail-textarea">
+          <h2 class="blog-detail-title m-0">情人節特別企劃</h2>
+          <div class="d-flex justify-content-between">
+            <p class="blog-detail-vicetitle">2020 Valentine’s Special</p>
+            <p class="blog-detail-date">2020/02/14</p>
+          </div>
+        </div>
+        <!--Card-->
+        <div class="blog-detail-card firstCard">
+          <div class="blog-detail-bg bg-blog-1"></div>
+          <h5 class="blog-detail-text">
+            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC
+            聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+          </h5>
+        </div>
+        <div class="blog-detail-card">
+          <div class="blog-detail-bg bg-blog-6"></div>
+          <h5 class="blog-detail-text">
+            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC
+            聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+          </h5>
+        </div>
+        <div class="blog-detail-card">
+          <div class="blog-detail-bg bg-blog-7"></div>
+          <h5 class="blog-detail-text">
+            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC
+            聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+          </h5>
+        </div>
+        <div class="blog-detail-card">
+          <div class="blog-detail-bg bg-blog-8"></div>
+          <h5 class="blog-detail-text">
+            2/14(五)-2/20(日) 至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個。<br>期間優惠還有~~持他牌鏡框更換鏡片<br>薄型非球面鏡片折300元 濾藍光鏡片折500元<br><br>快快帶上另一半
+            讓彼此每一次睜開眼，都被愛的視線包圍!
+          </h5>
+        </div>
+
+        <!--Share Icon-->
+        <div class="blog-detail-share d-flex align-items-center">
+          <p class="share">Share</p>
+          <div class="blog-detail-share-icon bg-logo-fb"></div>
+          <div class="blog-detail-share-icon bg-logo-ig"></div>
+        </div>
+        <!--上下篇-->
+        <div class="blog-detail-pages row justify-content-between">
+          <div class="blog-detail-pages-group col-12 col-md-6 d-flex align-items-center">
+            <div class="bg-icon-arrow blog-detail-pages-icon"></div>
+            <p class="m-0">上一篇：街頭潮人訪問 1</p>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center justify-content-start justify-content-md-end">
+            <div class="bg-icon-arrow"></div>
+            <p class="m-0">下一篇：街頭潮人訪問 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!--TagIcon-->
+      <div class="col-12 col-md-6 blog-detail-tags-group m-0">
+        <div class="d-flex align-items-center">
+          <div class="blog-detail-tag-icon bg-icon-tag"></div>
+          <h5>TAGS</h5>
+        </div>
+        <ul class="d-flex flex-wrap list-unstyled m-0">
+          <li class="d-inline-block">#special</li>
+          <li class="d-inline-block">#sale</li>
+          <li class="d-inline-block">#new_item</li>
+          <li class="d-inline-block">#interview</li>
+          <li class="d-inline-block">#trivia</li>
+          <li class="d-inline-block">#news</li>
+          <li class="d-inline-block">#event</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  let params = new URLSearchParams(document.location.search.substring(1));
+  let index = parseInt(params.get('blog'));
+  // console.log(typeof (index));
+  fetch("./assets/js/blog.json")
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      let result = data.blog;
+      if (index > result.length) {
+        window.location = "blogDetail.html?blog=1";
+      }
+      // console.log(result);
+      // 換麵包屑
+      document.querySelector('.breadcrumb').innerHTML = `
+        <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="blog.html">部落格</a></li>
+            <li class="breadcrumb-item active">${result[index].title}</li>`
+      // 換標題
+      document.querySelector('.blog-detail-textarea').innerHTML = `<h2 class="blog-detail-title m-0">${result[index].title}</h2>
+          <div class="d-flex justify-content-between">
+            <p class="blog-detail-vicetitle"${result[index].date}</p>
+          </div>`
+
+      // 換圖片
+      document.querySelector('.firstCard').innerHTML = `<div class="blog-detail-bg bg-blog-${index + 1}"></div>
+          <h5 class="blog-detail-text">
+            一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC
+            聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！
+          </h5>`
+    })
+</script>

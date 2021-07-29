@@ -26,6 +26,18 @@ $bg_map:(
 }
 .blog-card-group{
   margin-bottom: 40px;
+  .card{
+    &:hover{
+      .bg-blog{
+        background-size:150%;
+        transition: all 3s linear;
+      }
+    }
+  }
+  .bg-blog{
+    transition: all 3s linear;
+    background-size:100%;
+  }
   .card:not(:last-child){
     margin-bottom: 20px;
   }

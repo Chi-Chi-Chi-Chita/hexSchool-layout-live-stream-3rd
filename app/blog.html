@@ -85,18 +85,26 @@ current: questions
     },
   ]
   for (let i = 0; i < blogCard.length; i++) {
-    blog += `<div class="card flex-row flex-wrap flex-md-nowrap">
-      <div class="bg-blog-${i + 1}"></div>
+    blog += `<a class="blog-card-link card flex-row flex-wrap flex-md-nowrap text-decoration-none" href="#">
+      <div class="bg-blog-${i + 1} bg-blog"></div>
       <div class="card-body d-lg-flex flex-lg-column">
         <h3 class="card-body-title">${blogCard[i].title}</h3>
         <div class="card-body-text-group d-flex justify-content-between">
-          <h4 class="card-body-text">${blogCard[i].tag}</h4>
-          <h4 class="card-body-text">${blogCard[i].date}</h4>
+          <h4 class="card-body-text text-dark">${blogCard[i].tag}</h4>
+          <h4 class="card-body-text text-dark">${blogCard[i].date}</h4>
         </div>
-        <p class="card-body-content d-none d-md-block">${blogCard[i].content}<span class="d-none d-md-inline-block d-lg-none">more</span></p>
+        <p class="card-body-content d-none d-md-block text-dark">${blogCard[i].content}<span class="d-none d-md-inline-block d-lg-none">more</span></p>
         <p class="d-none d-lg-block card-body-lg-more mt-auto">MORE</p>
       </div>
-    </div>`
+    </a>`
   }
   document.querySelector('.blog-card-group').innerHTML = blog;
+
+  let blogLink = document.querySelectorAll('.blog-card-link');
+  blogLink.forEach(function (item, index) {
+    item.addEventListener('click', openBlogDetail.bind(this, index))
+  })
+  function openBlogDetail(index) {
+    window.location = `blogDetail.html?blog=${index}`;
+  }
 </script>
