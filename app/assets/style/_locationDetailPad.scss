@@ -1,0 +1,30 @@
+@include pad{
+  .locationDetail{
+    .container{
+      padding-top: 60px;
+      padding-bottom: 96px;
+    }
+    &-title{
+      font-size: 3rem;
+      line-height: 5rem;
+      padding-left: 16px;
+      margin-bottom: 40px;
+    }
+    &-selection{
+      margin-bottom: 24px;
+    }
+    &-selection-title{
+      font-size: 1rem;
+      margin-right: 20px;
+    }
+    .form-select{
+      width: 40%;
+    }
+    &-card-bg{
+      margin-right: 30px;
+    }
+    &-map{
+      margin-top: 32px;
+    }
+  }
+}
