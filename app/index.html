@@ -5,8 +5,178 @@ engine: ejs
 current: index
 ---
 
-<div>
-  這是一段話
+<section class="bg-banner d-flex flex-column align-items-end justify-content-center">
+  <p class="bg-banner-viceTitle">Promise-Desert 2020 早春系列</p>
+  <h2 class="bg-banner-title">看得清，才能看得遠</h2>
+</section>
+<!--用專業的，做專業的事-->
+<section class="index-intro">
+  <div class="container index-intro-container">
+    <h3 class="index-intro-title">用專業的心,做專業的事</h3>
+    <div class="index-intro-card-group row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <!--DOM-->
+    </div>
+  </div>
+</section>
+<!--經典系列鏡框-->
+<section class="index-product">
+  <div class="container index-product-container">
+    <h2 class="index-product-title">經典系列鏡框</h2>
+    <!--optical-->
+    <div class="index-product-row row position-relative">
+      <div class="col-md-7 index-product-bg bg-index-product-1">
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center">
+        <div class="index-product-icon bg-icon-diamond"></div>
+        <h3 class="index-product-card-title">OPTICAL</h3>
+      </div>
+    </div>
+    <!--sunglasses-->
+    <div class="index-product-row row position-relative flex-lg-row-reverse">
+      <div class="col-md-7 index-product-bg bg-index-product-2">
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center">
+        <div class="index-product-icon bg-icon-sun"></div>
+        <h3 class="index-product-card-title">SUNGLASSES</h3>
+      </div>
+    </div>
+    <!--functional-->
+    <div class="index-product-row row position-relative">
+      <div class="col-md-7 index-product-bg bg-index-product-3">
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center">
+        <div class="index-product-icon bg-icon-thunder"></div>
+        <h3 class="index-product-card-title">FUNCTIONAL</h3>
+      </div>
+    </div>
+</section>
+<!--聯名設計鏡框-->
+<section class="index-design bg-bg">
+  <div class="container">
+    <h3 class="index-design-title">聯名設計鏡框</h3>
+    <ul class="list-unstyled row row-cols-1 row-cols-md-2 justify-content-center">
+      <li class="col">
+        <a href="product.html" class="bg-index-design-1">Double A+</a>
+      </li>
+      <li class="col">
+        <a href="product.html" class="bg-index-design-2">YOUTH</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<!--顧客推薦-->
+<section class="index-rec">
+  <div class="container">
+    <h3 class="index-rec-title">顧客推薦</h3>
+    <div class="index-rec-row row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!--DOM-->
+    </div>
+  </div>
+</section>
+
+<!--聯絡我們-->
+<div class="index-connect">
+  <div class="index-connect-container">
+    <h3 class="index-connect-title">聯絡我們</h3>
+    <p class="index-connect-text">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+    <div class="index-connect-input-group">
+      <label for="inputName" class="form-label index-connect-input-label">姓名</label>
+      <input type="text" class="form-control rounded-0 index-connect-input-text" id="inputName" placeholder="陳小明">
+    </div>
+    <div class="index-connect-input-group">
+      <label for="inputTel" class="form-label index-connect-input-label">聯絡電話</label>
+      <input type="tel" class="form-control rounded-0 index-connect-input-text" id="inputTel"
+        placeholder="0912-345-678">
+    </div>
+    <div class="index-connect-input-group">
+      <label for="inputMail" class="form-label index-connect-input-label">電子郵件</label>
+      <input type="mail" class="form-control rounded-0 index-connect-input-text" id="inputMail"
+        placeholder="example@email.com">
+    </div>
+    <div class="index-connect-input-group">
+      <label for="inputRec" class="form-label index-connect-input-label">意見反應</label>
+      <textarea class="form-control rounded-0 index-connect-input-text" id="inputRec" rows="3"
+        placeholder="example@email.com"></textarea>
+    </div>
+    <div class="form-check index-connect-input-group">
+      <input class="form-check-input index-connect-input-text" type="checkbox" value="" id="index-connect-agree">
+      <label class="form-check-label" for="index-connect-agree">
+        我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+      </label>
+    </div>
+    <button type="button" class="index-connect-btn btn btn-danger rounded-0 border-0">確認送出</button>
+  </div>
 </div>
 
-<div class="box"></div>
+<script>
+  let introCard = [
+    {
+      title: '單一價格',
+      description: '無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。'
+    },
+    {
+      title: '20 分鐘即可取件',
+      description: '為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。'
+    },
+    {
+      title: '安心售後服務',
+      description: '我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。'
+    },
+    {
+      title: '關於鏡片',
+      description: '使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。'
+    }
+  ]
+  let intro = '';
+  for (let i = 0; i < introCard.length; i++) {
+    intro += `<div class="col">
+        <div class="card border-0">
+          <div class="index-intro-icon bg-index-icon-${i + 1} m-auto"></div>
+          <div class="card-body">
+            <h5 class="card-title">${introCard[i].title}</h5>
+            <p class="card-text">${introCard[i].description}</p>
+          </div>
+        </div>
+      </div>`
+  }
+  document.querySelector('.index-intro-card-group').innerHTML = intro;
+
+  let recCard = [
+    {
+      name: 'Jessy',
+      des: '眼鏡品質優良，下次還會想來這邊購買！',
+      date: '2021 / 06 / 20'
+    },
+    {
+      name: '凱倫',
+      des: '做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！',
+      date: '2021/04/18'
+    },
+    {
+      name: '悠悠',
+      des: '謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！',
+      date: '2020/12/25'
+    },
+    {
+      name: 'Kyuan',
+      des: '服務很好，品質沒有任何問題，非常喜歡。',
+      date: '2020/10/31'
+    }
+  ]
+  let rec = '';
+  for (let i = 0; i < recCard.length; i++) {
+    rec += `<div class="col">
+        <div class="index-rec-card card h-100">
+          <img src="./assets/images/rec-${i + 1}.png" alt="">
+          <div class="index-rec-card-body card-body">
+            <h5 class="index-rec-card-title card-title">${recCard[i].name}</h5>
+            <p class="index-rec-card-text">${recCard[i].des}</p>
+          </div>
+          <div class="card-footer bg-white border-0 p-4">
+            <h6 class="index-rec-card-footer">${recCard[i].date}</h6>
+          </div>
+        </div>
+      </div>`
+  }
+  document.querySelector('.index-rec-row').innerHTML = rec;
+</script>
