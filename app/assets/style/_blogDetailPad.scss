@@ -1,0 +1,59 @@
+@include pad{
+  .blog-detail{
+    .container{
+      padding-bottom: 96px;
+    }
+    &-hashtag{
+      p{
+        font-size: 1rem;
+        &:first-child{
+          margin-right: 8px;
+        }
+      }
+    }
+    .title{
+      font-weight: 2rem;
+      line-height: 5.9375rem;
+      color:map-get($color,black);
+    }
+    .vicetitle{
+      font-weight: 1rem;
+      line-height: 2.625rem;
+    }
+    .date{
+      line-height: 1.5rem;
+      margin-bottom: 25px;
+    }
+    &-card{
+      &:last-child{
+        margin-bottom: 29px;
+      }
+    }
+    &-bg{
+      height: 333px;
+    }
+    &-share{
+      padding-bottom: 20px;
+      margin-bottom: 16px;
+    }
+    &-pages{
+      margin-bottom: 0px;
+      &-group{
+        margin-bottom: 0px;
+      }
+      .bg-icon-arrow{
+        width: 24px;
+        height: 24px;
+      }
+      p{
+        font-size: 1rem;
+        line-height: 1.875rem;
+      }
+    }
+    &-tags-group{
+      li{
+        margin-right: 16px;
+      }
+    }
+  }
+}
