@@ -54,9 +54,9 @@ current: product
   </div>
 </section>
 
-<section class="product-pagination">
-  <nav class="d-flex justify-content-center">
-    <ul class="pagination">
+<section>
+  <nav>
+    <ul class="pagination d-flex justify-content-center">
       <li class="page-item">
         <a class="page-link">上一頁</a>
       </li>
@@ -64,7 +64,7 @@ current: product
         <a class="page-link" href="#">1</a>
       </li>
       <li class="page-item">
-        <a class="page-link" href="#">2</a>
+        <a class="page-link active" href="#">2</a>
       </li>
       <li class="page-item">
         <a class="page-link" href="#">3</a>
@@ -75,6 +75,7 @@ current: product
     </ul>
   </nav>
 </section>
+
 <script>
   let optical = document.querySelector('.optical');
   let opticalBtn = document.querySelector('.opticalBtn');
