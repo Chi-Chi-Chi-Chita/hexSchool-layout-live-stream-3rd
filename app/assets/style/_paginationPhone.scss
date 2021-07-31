@@ -1,0 +1,21 @@
+.pagination{
+  margin-bottom: 56px;
+  .page-item{
+    border:1px solid #555555;
+    &:hover{
+      .page-link{
+        background-color:#F2F2F2;
+      }
+    }
+  }
+  .page-link{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#555555;
+    transition: all .3s ease-in-out;
+  }
+  .active{
+    background-color: black;
+    color:white;
+  }
+}
